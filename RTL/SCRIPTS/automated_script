@@ -1,0 +1,6 @@
+source 00_run_RTL
+source 09_clean_up
+source 01_run_dc
+source 09_clean_up
+source 01_run_GATE
+source 09_clean_up

@@ -1,0 +1,106 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PN
+Version: N-2017.09-SP2
+Date   : Mon Mar  6 10:12:45 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: result_buf_reg[3][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result_buf_reg[2][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_buf_reg[3][1]/CK (DFFSX1)         0.00       0.00 r
+  result_buf_reg[3][1]/Q (DFFSX1)          0.45       0.45 r
+  U3136/Y (NOR2BX1)                        0.16       0.61 r
+  U2622/Y (OAI22XL)                        0.07       0.68 f
+  U2621/Y (OAI21XL)                        0.11       0.79 r
+  U3137/Y (NAND2BX1)                       0.08       0.87 f
+  U2402/Y (AOI21XL)                        0.15       1.01 r
+  U2488/Y (OAI22XL)                        0.09       1.10 f
+  U2487/Y (OAI2BB1XL)                      0.12       1.23 r
+  U2632/Y (AOI2BB2X1)                      0.08       1.31 f
+  U2400/Y (OAI21XL)                        0.20       1.50 r
+  U2485/Y (AOI2BB2X1)                      0.10       1.61 f
+  U2408/Y (OAI21XL)                        0.29       1.89 r
+  U2484/Y (AOI21X2)                        0.17       2.06 f
+  U2560/Y (BUFX6)                          0.22       2.29 f
+  U2422/Y (MX2X1)                          0.23       2.52 f
+  U2758/Y (NAND2XL)                        0.12       2.64 r
+  U2406/Y (NAND3XL)                        0.12       2.76 f
+  U2398/Y (OR2X1)                          0.24       2.99 f
+  U2404/Y (NOR2XL)                         0.15       3.15 r
+  U2776/Y (INVXL)                          0.06       3.21 f
+  U2544/Y (OAI21XL)                        0.20       3.40 r
+  U3193/Y (AOI21X1)                        0.10       3.51 f
+  U3194/Y (NAND2X2)                        0.11       3.62 r
+  U2477/Y (BUFX12)                         0.16       3.77 r
+  U2848/Y (MX2X1)                          0.26       4.03 r
+  U2850/Y (INVXL)                          0.06       4.10 f
+  U2649/Y (OAI2BB1XL)                      0.22       4.32 f
+  U3203/CO (ACHCINX2)                      0.12       4.44 r
+  U3205/CO (ACHCINX2)                      0.10       4.54 f
+  U3206/CO (ACHCINX2)                      0.11       4.65 r
+  U3208/CO (ACHCINX2)                      0.09       4.74 f
+  U2858/Y (NAND2BX1)                       0.17       4.92 f
+  U2526/Y (NAND3X1)                        0.13       5.05 r
+  U2396/Y (NAND2X2)                        0.27       5.31 f
+  U2577/Y (MX2X1)                          0.31       5.63 r
+  U2424/Y (NAND2XL)                        0.12       5.75 f
+  U2884/Y (NAND2XL)                        0.20       5.94 r
+  U2722/Y (OAI22XL)                        0.21       6.16 f
+  U3031/Y (OAI22XL)                        0.19       6.34 r
+  U3277/Y (OAI21X1)                        0.12       6.46 f
+  U3278/Y (OAI2BB1X1)                      0.10       6.57 r
+  U3281/CO (ACHCINX2)                      0.09       6.65 f
+  U3282/Y (AOI2BB1X2)                      0.19       6.85 f
+  U2459/Y (OAI21X1)                        0.21       7.06 r
+  U3288/Y (NAND2BX4)                       0.18       7.24 f
+  U2429/Y (NOR2XL)                         0.26       7.50 r
+  U3341/Y (NAND2XL)                        0.09       7.59 f
+  U2731/Y (NAND2XL)                        0.14       7.73 r
+  U2620/Y (INVXL)                          0.08       7.81 f
+  U2456/Y (OAI21XL)                        0.22       8.03 r
+  U2655/Y (AOI21XL)                        0.11       8.14 f
+  U3356/Y (AOI2BB1X1)                      0.25       8.39 f
+  U2453/Y (AOI2BB2X1)                      0.24       8.63 f
+  U3360/CO (ACHCINX2)                      0.10       8.73 r
+  U3071/Y (OAI2BB1X1)                      0.16       8.90 r
+  U2503/Y (NAND3X1)                        0.08       8.98 f
+  U2451/Y (NAND2X1)                        0.11       9.09 r
+  U2431/Y (INVXL)                          0.06       9.15 f
+  U3014/Y (AND2X2)                         0.22       9.37 f
+  U2498/Y (INVX3)                          0.14       9.51 r
+  U3092/Y (NOR2XL)                         0.07       9.57 f
+  U2443/Y (AOI211XL)                       0.17       9.74 r
+  U4211/Y (OAI21XL)                        0.09       9.83 f
+  result_buf_reg[2][4]/D (DFFSX1)          0.00       9.83 f
+  data arrival time                                   9.83
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  result_buf_reg[2][4]/CK (DFFSX1)         0.00      10.00 r
+  library setup time                      -0.16       9.84
+  data required time                                  9.84
+  -----------------------------------------------------------
+  data required time                                  9.84
+  data arrival time                                  -9.83
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1
