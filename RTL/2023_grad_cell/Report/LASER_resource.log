@@ -1,0 +1,510 @@
+ 
+****************************************
+Report : resources
+Design : LASER
+Version: N-2017.09-SP2
+Date   : Fri Mar 31 22:48:15 2023
+****************************************
+
+
+Resource Report for this hierarchy in file
+        /home/rain/IC_contest/2023_grad_cell/2023_grad_cell/2023_grad_cell/LASER.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| gte_x_1        | DW_cmp         | width=6    | gte_61 (LASER.v:61)        |
+| add_x_25       | DW01_inc       | width=4    | add_180 (LASER.v:180)      |
+| add_x_27       | DW01_inc       | width=4    | add_189 (LASER.v:189)      |
+| add_x_29       | DW01_inc       | width=11   | add_198 (LASER.v:198)      |
+| add_x_4        | DW01_inc       | width=6    | add_156 (LASER.v:156)      |
+|                |                |            | add_78_G2 (LASER.v:78)     |
+|                |                |            | add_79_G2 (LASER.v:79)     |
+| add_x_13       | DW01_add       | width=6    | add_78_G5 (LASER.v:78)     |
+|                |                |            | add_79_G5 (LASER.v:79)     |
+| add_x_37       | DW01_add       | width=7    | add_153 (LASER.v:153)      |
+|                |                |            | add_237 (LASER.v:237)      |
+| add_x_7        | DW01_add       | width=6    | add_78_G3 (LASER.v:78)     |
+|                |                |            | add_79_G3 (LASER.v:79)     |
+| add_x_10       | DW01_add       | width=6    | add_78_G4 (LASER.v:78)     |
+|                |                |            | add_79_G4 (LASER.v:79)     |
+| DP_OP_670J1_122_3642            |            |                            |
+|                | DP_OP_670J1_122_3642 |      |                            |
+| DP_OP_671J1_123_7360            |            |                            |
+|                | DP_OP_671J1_123_7360 |      |                            |
+| DP_OP_672J1_124_7360            |            |                            |
+|                | DP_OP_672J1_124_7360 |      |                            |
+| DP_OP_673J1_125_1257            |            |                            |
+|                | DP_OP_673J1_125_1257 |      |                            |
+| DP_OP_674J1_126_7360            |            |                            |
+|                | DP_OP_674J1_126_7360 |      |                            |
+| DP_OP_675J1_127_7360            |            |                            |
+|                | DP_OP_675J1_127_7360 |      |                            |
+| DP_OP_676J1_128_1257            |            |                            |
+|                | DP_OP_676J1_128_1257 |      |                            |
+| DP_OP_677J1_129_7360            |            |                            |
+|                | DP_OP_677J1_129_7360 |      |                            |
+| DP_OP_678J1_130_7360            |            |                            |
+|                | DP_OP_678J1_130_7360 |      |                            |
+| DP_OP_679J1_131_1257            |            |                            |
+|                | DP_OP_679J1_131_1257 |      |                            |
+| DP_OP_680J1_132_7360            |            |                            |
+|                | DP_OP_680J1_132_7360 |      |                            |
+| DP_OP_681J1_133_7360            |            |                            |
+|                | DP_OP_681J1_133_7360 |      |                            |
+| DP_OP_682J1_134_1257            |            |                            |
+|                | DP_OP_682J1_134_1257 |      |                            |
+| DP_OP_683J1_135_7360            |            |                            |
+|                | DP_OP_683J1_135_7360 |      |                            |
+| DP_OP_684J1_136_7360            |            |                            |
+|                | DP_OP_684J1_136_7360 |      |                            |
+| DP_OP_685J1_137_1257            |            |                            |
+|                | DP_OP_685J1_137_1257 |      |                            |
+=============================================================================
+
+Datapath Report for DP_OP_670J1_122_3642
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_670J1_122_3642 | add_286_I2_aco (LASER.v:286)                        |
+|                      | add_286_I3_aco (LASER.v:286)                        |
+|                      | add_286_I4_aco (LASER.v:286)                        |
+|                      | add_286_I5_aco (LASER.v:286)                        |
+|                      | add_286_I6_aco (LASER.v:286)                        |
+|                      | add_286_I7_aco (LASER.v:286)                        |
+|                      | add_286_I8_aco (LASER.v:286)                        |
+|                      | add_286_I9_aco (LASER.v:286)                        |
+|                      | add_286_I10_aco (LASER.v:286)                       |
+|                      | add_286_I11_aco (LASER.v:286)                       |
+|                      | add_286_I12_aco (LASER.v:286)                       |
+|                      | add_286_I13_aco (LASER.v:286)                       |
+|                      | add_286_I14_aco (LASER.v:286)                       |
+|                      | add_286_I15_aco (LASER.v:286)                       |
+|                      | add_286_I16_aco (LASER.v:286)                       |
+|                      | add_286_I17_aco (LASER.v:286)                       |
+|                      | add_286_I18_aco (LASER.v:286)                       |
+|                      | add_286_I19_aco (LASER.v:286)                       |
+|                      | add_286_I20_aco (LASER.v:286)                       |
+|                      | add_286_I21_aco (LASER.v:286)                       |
+|                      | add_286_I22_aco (LASER.v:286)                       |
+|                      | add_286_I23_aco (LASER.v:286)                       |
+|                      | add_286_I24_aco (LASER.v:286)                       |
+|                      | add_286_I25_aco (LASER.v:286)                       |
+|                      | add_286_I26_aco (LASER.v:286)                       |
+|                      | add_286_I27_aco (LASER.v:286)                       |
+|                      | add_286_I28_aco (LASER.v:286)                       |
+|                      | add_286_I29_aco (LASER.v:286)                       |
+|                      | add_286_I30_aco (LASER.v:286)                       |
+|                      | add_286_I31_aco (LASER.v:286)                       |
+|                      | add_286_I32_aco (LASER.v:286)                       |
+|                      | add_286_I33_aco (LASER.v:286)                       |
+|                      | add_286_I34_aco (LASER.v:286)                       |
+|                      | add_286_I35_aco (LASER.v:286)                       |
+|                      | add_286_I36_aco (LASER.v:286)                       |
+|                      | add_286_I37_aco (LASER.v:286)                       |
+|                      | add_286_I38_aco (LASER.v:286)                       |
+|                      | add_286_I39_aco (LASER.v:286)                       |
+|                      | add_286_I40 (LASER.v:286)                           |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 1     |                                          |
+| I2    | PI   | Unsigned | 1     |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 1     |                                          |
+| I5    | PI   | Unsigned | 1     |                                          |
+| I6    | PI   | Unsigned | 1     |                                          |
+| I7    | PI   | Unsigned | 1     |                                          |
+| I8    | PI   | Unsigned | 1     |                                          |
+| I9    | PI   | Unsigned | 1     |                                          |
+| I10   | PI   | Unsigned | 1     |                                          |
+| I11   | PI   | Unsigned | 1     |                                          |
+| I12   | PI   | Unsigned | 1     |                                          |
+| I13   | PI   | Unsigned | 1     |                                          |
+| I14   | PI   | Unsigned | 1     |                                          |
+| I15   | PI   | Unsigned | 1     |                                          |
+| I16   | PI   | Unsigned | 1     |                                          |
+| I17   | PI   | Unsigned | 1     |                                          |
+| I18   | PI   | Unsigned | 1     |                                          |
+| I19   | PI   | Unsigned | 1     |                                          |
+| I20   | PI   | Unsigned | 1     |                                          |
+| I21   | PI   | Unsigned | 1     |                                          |
+| I22   | PI   | Unsigned | 1     |                                          |
+| I23   | PI   | Unsigned | 1     |                                          |
+| I24   | PI   | Unsigned | 1     |                                          |
+| I25   | PI   | Unsigned | 1     |                                          |
+| I26   | PI   | Unsigned | 1     |                                          |
+| I27   | PI   | Unsigned | 1     |                                          |
+| I28   | PI   | Unsigned | 1     |                                          |
+| I29   | PI   | Unsigned | 1     |                                          |
+| I30   | PI   | Unsigned | 1     |                                          |
+| I31   | PI   | Unsigned | 1     |                                          |
+| I32   | PI   | Unsigned | 1     |                                          |
+| I33   | PI   | Unsigned | 1     |                                          |
+| I34   | PI   | Unsigned | 1     |                                          |
+| I35   | PI   | Unsigned | 1     |                                          |
+| I36   | PI   | Unsigned | 1     |                                          |
+| I37   | PI   | Unsigned | 1     |                                          |
+| I38   | PI   | Unsigned | 1     |                                          |
+| I39   | PI   | Unsigned | 1     |                                          |
+| O1    | PO   | Unsigned | 6     | I1 + I2 + I3 + I4 + I5 + I6 + I7 + I8 + I9 + I10 + I11 + I12 + I13 + I14 + I15 + I16 + I17 + I18 + I19 + I20 + I21 + I22 + I23 + I24 + I25 + I26 + I27 + I28 + I29 + I30 + I31 + I32 + I33 + I34 + I35 + I36 + I37 + I38 + I39 (LASER.v:286) |
+| O2    | PO   | Unsigned | 6     | O1 + $unsigned(1'b1) (LASER.v:286)       |
+==============================================================================
+
+Datapath Report for DP_OP_671J1_123_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_671J1_123_7360 | genblk2[0].inst_Inside/sub_299 (LASER.v:299)        |
+|                      | genblk2[0].inst_Inside/sub_add_302 (LASER.v:302)    |
+|                      | genblk2[0].inst_Inside/add_302_ni (LASER.v:302)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:299)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:302)  |
+==============================================================================
+
+Datapath Report for DP_OP_672J1_124_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_672J1_124_7360 | genblk2[0].inst_Inside/sub_300 (LASER.v:300)        |
+|                      | genblk2[0].inst_Inside/sub_add_303 (LASER.v:303)    |
+|                      | genblk2[0].inst_Inside/add_303_ni (LASER.v:303)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:300)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:303)  |
+==============================================================================
+
+Datapath Report for DP_OP_673J1_125_1257
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_673J1_125_1257 | genblk2[0].inst_Inside/add_305 (LASER.v:305)        |
+|                      | genblk2[0].inst_Inside/lte_308 (LASER.v:308)        |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| I2    | PI   | Unsigned | 5     |                                          |
+| T181  | IFO  | Unsigned | 6     | I1 + I2 (LASER.v:305)                    |
+| O1    | PO   | Unsigned | 1     | T181 <= $unsigned(3'b100) (LASER.v:308)  |
+==============================================================================
+
+Datapath Report for DP_OP_674J1_126_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_674J1_126_7360 | genblk2[4].inst_Inside/sub_299 (LASER.v:299)        |
+|                      | genblk2[4].inst_Inside/sub_add_302 (LASER.v:302)    |
+|                      | genblk2[4].inst_Inside/add_302_ni (LASER.v:302)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:299)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:302)  |
+==============================================================================
+
+Datapath Report for DP_OP_675J1_127_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_675J1_127_7360 | genblk2[4].inst_Inside/sub_300 (LASER.v:300)        |
+|                      | genblk2[4].inst_Inside/sub_add_303 (LASER.v:303)    |
+|                      | genblk2[4].inst_Inside/add_303_ni (LASER.v:303)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:300)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:303)  |
+==============================================================================
+
+Datapath Report for DP_OP_676J1_128_1257
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_676J1_128_1257 | genblk2[4].inst_Inside/add_305 (LASER.v:305)        |
+|                      | genblk2[4].inst_Inside/lte_308 (LASER.v:308)        |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| I2    | PI   | Unsigned | 5     |                                          |
+| T192  | IFO  | Unsigned | 6     | I1 + I2 (LASER.v:305)                    |
+| O1    | PO   | Unsigned | 1     | T192 <= $unsigned(3'b100) (LASER.v:308)  |
+==============================================================================
+
+Datapath Report for DP_OP_677J1_129_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_677J1_129_7360 | genblk2[3].inst_Inside/sub_299 (LASER.v:299)        |
+|                      | genblk2[3].inst_Inside/sub_add_302 (LASER.v:302)    |
+|                      | genblk2[3].inst_Inside/add_302_ni (LASER.v:302)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:299)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:302)  |
+==============================================================================
+
+Datapath Report for DP_OP_678J1_130_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_678J1_130_7360 | genblk2[3].inst_Inside/sub_300 (LASER.v:300)        |
+|                      | genblk2[3].inst_Inside/sub_add_303 (LASER.v:303)    |
+|                      | genblk2[3].inst_Inside/add_303_ni (LASER.v:303)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:300)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:303)  |
+==============================================================================
+
+Datapath Report for DP_OP_679J1_131_1257
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_679J1_131_1257 | genblk2[3].inst_Inside/add_305 (LASER.v:305)        |
+|                      | genblk2[3].inst_Inside/lte_308 (LASER.v:308)        |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| I2    | PI   | Unsigned | 5     |                                          |
+| T203  | IFO  | Unsigned | 6     | I1 + I2 (LASER.v:305)                    |
+| O1    | PO   | Unsigned | 1     | T203 <= $unsigned(3'b100) (LASER.v:308)  |
+==============================================================================
+
+Datapath Report for DP_OP_680J1_132_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_680J1_132_7360 | genblk2[2].inst_Inside/sub_299 (LASER.v:299)        |
+|                      | genblk2[2].inst_Inside/sub_add_302 (LASER.v:302)    |
+|                      | genblk2[2].inst_Inside/add_302_ni (LASER.v:302)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:299)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:302)  |
+==============================================================================
+
+Datapath Report for DP_OP_681J1_133_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_681J1_133_7360 | genblk2[2].inst_Inside/sub_300 (LASER.v:300)        |
+|                      | genblk2[2].inst_Inside/sub_add_303 (LASER.v:303)    |
+|                      | genblk2[2].inst_Inside/add_303_ni (LASER.v:303)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:300)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:303)  |
+==============================================================================
+
+Datapath Report for DP_OP_682J1_134_1257
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_682J1_134_1257 | genblk2[2].inst_Inside/add_305 (LASER.v:305)        |
+|                      | genblk2[2].inst_Inside/lte_308 (LASER.v:308)        |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| I2    | PI   | Unsigned | 5     |                                          |
+| T214  | IFO  | Unsigned | 6     | I1 + I2 (LASER.v:305)                    |
+| O1    | PO   | Unsigned | 1     | T214 <= $unsigned(3'b100) (LASER.v:308)  |
+==============================================================================
+
+Datapath Report for DP_OP_683J1_135_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_683J1_135_7360 | genblk2[1].inst_Inside/sub_299 (LASER.v:299)        |
+|                      | genblk2[1].inst_Inside/sub_add_302 (LASER.v:302)    |
+|                      | genblk2[1].inst_Inside/add_302_ni (LASER.v:302)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:299)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:302)  |
+==============================================================================
+
+Datapath Report for DP_OP_684J1_136_7360
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_684J1_136_7360 | genblk2[1].inst_Inside/sub_300 (LASER.v:300)        |
+|                      | genblk2[1].inst_Inside/sub_add_303 (LASER.v:303)    |
+|                      | genblk2[1].inst_Inside/add_303_ni (LASER.v:303)     |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - I2 (LASER.v:300)                    |
+| O2    | PO   | Signed   | 5     | -O1 + $unsigned(5'b00000) (LASER.v:303)  |
+==============================================================================
+
+Datapath Report for DP_OP_685J1_137_1257
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_685J1_137_1257 | genblk2[1].inst_Inside/add_305 (LASER.v:305)        |
+|                      | genblk2[1].inst_Inside/lte_308 (LASER.v:308)        |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| I2    | PI   | Unsigned | 5     |                                          |
+| T225  | IFO  | Unsigned | 6     | I1 + I2 (LASER.v:305)                    |
+| O1    | PO   | Unsigned | 1     | T225 <= $unsigned(3'b100) (LASER.v:308)  |
+==============================================================================
+
+
+Datapath Extraction Report
+
+Information: Operator associated with resources 'add_286_I40 (LASER.v:286)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'C5657 (LASER.v:285)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[0].inst_Inside/sub_add_302 (LASER.v:302) genblk2[0].inst_Inside/add_302_ni (LASER.v:302)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[0].inst_Inside/C136 (LASER.v:302)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[0].inst_Inside/sub_add_303 (LASER.v:303) genblk2[0].inst_Inside/add_303_ni (LASER.v:303)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[0].inst_Inside/C137 (LASER.v:303)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[4].inst_Inside/sub_add_302 (LASER.v:302) genblk2[4].inst_Inside/add_302_ni (LASER.v:302)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[4].inst_Inside/C136 (LASER.v:302)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[4].inst_Inside/sub_add_303 (LASER.v:303) genblk2[4].inst_Inside/add_303_ni (LASER.v:303)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[4].inst_Inside/C137 (LASER.v:303)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[3].inst_Inside/sub_add_302 (LASER.v:302) genblk2[3].inst_Inside/add_302_ni (LASER.v:302)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[3].inst_Inside/C136 (LASER.v:302)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[3].inst_Inside/sub_add_303 (LASER.v:303) genblk2[3].inst_Inside/add_303_ni (LASER.v:303)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[3].inst_Inside/C137 (LASER.v:303)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[2].inst_Inside/sub_add_302 (LASER.v:302) genblk2[2].inst_Inside/add_302_ni (LASER.v:302)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[2].inst_Inside/C136 (LASER.v:302)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[2].inst_Inside/sub_add_303 (LASER.v:303) genblk2[2].inst_Inside/add_303_ni (LASER.v:303)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[2].inst_Inside/C137 (LASER.v:303)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[1].inst_Inside/sub_add_302 (LASER.v:302) genblk2[1].inst_Inside/add_302_ni (LASER.v:302)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[1].inst_Inside/C136 (LASER.v:302)'.  (HDL-120)
+
+Information: Operator associated with resources 'genblk2[1].inst_Inside/sub_add_303 (LASER.v:303) genblk2[1].inst_Inside/add_303_ni (LASER.v:303)' in design 'LASER' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'genblk2[1].inst_Inside/C137 (LASER.v:303)'.  (HDL-120)
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| gte_x_1            | DW_cmp           | apparch (area)     |                |
+| add_x_25           | DW01_inc         | apparch (area)     |                |
+| add_x_27           | DW01_inc         | apparch (area)     |                |
+| add_x_29           | DW01_inc         | apparch (area)     |                |
+| add_x_4            | DW01_inc         | apparch (area)     |                |
+| add_x_13           | DW01_add         | apparch (area)     |                |
+| add_x_37           | DW01_add         | apparch (area)     |                |
+| add_x_7            | DW01_add         | apparch (area)     |                |
+| add_x_10           | DW01_add         | apparch (area)     |                |
+| DP_OP_670J1_122_3642                  |                    |                |
+|                    | DP_OP_670J1_122_3642 | str (area)     |                |
+| DP_OP_671J1_123_7360                  |                    |                |
+|                    | DP_OP_671J1_123_7360 | str (area)     |                |
+| DP_OP_672J1_124_7360                  |                    |                |
+|                    | DP_OP_672J1_124_7360 | str (area)     |                |
+| DP_OP_673J1_125_1257                  |                    |                |
+|                    | DP_OP_673J1_125_1257 | str (area)     |                |
+| DP_OP_674J1_126_7360                  |                    |                |
+|                    | DP_OP_674J1_126_7360 | str (area)     |                |
+| DP_OP_675J1_127_7360                  |                    |                |
+|                    | DP_OP_675J1_127_7360 | str (area)     |                |
+| DP_OP_676J1_128_1257                  |                    |                |
+|                    | DP_OP_676J1_128_1257 | str (area)     |                |
+| DP_OP_677J1_129_7360                  |                    |                |
+|                    | DP_OP_677J1_129_7360 | str (area)     |                |
+| DP_OP_678J1_130_7360                  |                    |                |
+|                    | DP_OP_678J1_130_7360 | str (area)     |                |
+| DP_OP_679J1_131_1257                  |                    |                |
+|                    | DP_OP_679J1_131_1257 | str (area)     |                |
+| DP_OP_680J1_132_7360                  |                    |                |
+|                    | DP_OP_680J1_132_7360 | str (area)     |                |
+| DP_OP_681J1_133_7360                  |                    |                |
+|                    | DP_OP_681J1_133_7360 | str (area)     |                |
+| DP_OP_682J1_134_1257                  |                    |                |
+|                    | DP_OP_682J1_134_1257 | str (area)     |                |
+| DP_OP_683J1_135_7360                  |                    |                |
+|                    | DP_OP_683J1_135_7360 | str (area)     |                |
+| DP_OP_684J1_136_7360                  |                    |                |
+|                    | DP_OP_684J1_136_7360 | str (area)     |                |
+| DP_OP_685J1_137_1257                  |                    |                |
+|                    | DP_OP_685J1_137_1257 | str (area)     |                |
+===============================================================================
+
+1

@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LASER
+Version: N-2017.09-SP2
+Date   : Fri Mar 31 22:48:15 2023
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.3020 mW   (96%)
+  Net Switching Power  =  61.0670 uW    (4%)
+                         ---------
+Total Dynamic Power    =   1.3631 mW  (100%)
+
+Cell Leakage Power     =  22.0599 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           1.2804        4.9394e-03        1.4982e+07            1.3003  (  93.88%)
+sequential     7.5806e-06        5.0690e-07        5.4121e+04        6.2208e-05  (   0.00%)
+combinational  2.1559e-02        5.6127e-02        7.0239e+06        8.4710e-02  (   6.12%)
+--------------------------------------------------------------------------------------------------
+Total              1.3020 mW     6.1067e-02 mW     2.2060e+07 pW         1.3851 mW
+1

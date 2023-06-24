@@ -1,0 +1,70 @@
+ 
+****************************************
+check_design summary:
+Version:     N-2017.09-SP2
+Date:        Fri Mar 31 22:47:56 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              56
+    Cells do not drive (LINT-1)                                    56
+--------------------------------------------------------------------------------
+
+Warning: In design 'LASER', cell 'B_465' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C5791' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C5795' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C5807' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C5812' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C5819' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C5839' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'B_505' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6111' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6112' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6113' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6114' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6115' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6116' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6117' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6118' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6119' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6120' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6121' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6122' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6123' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6124' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6125' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6126' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6127' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6128' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6129' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6130' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6131' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6132' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6133' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6134' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6135' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6136' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6137' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6138' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6139' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6140' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6141' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6142' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6143' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6144' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6145' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6146' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6147' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C6148' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_4', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_4', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_0', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_0', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_1', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_1', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_2', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_2', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_3', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'Inside_3', cell 'B_4' does not drive any nets. (LINT-1)
+1

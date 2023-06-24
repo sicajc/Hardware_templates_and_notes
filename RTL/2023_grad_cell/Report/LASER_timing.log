@@ -1,0 +1,70 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LASER
+Version: N-2017.09-SP2
+Date   : Fri Mar 31 22:48:15 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: global_cnt_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: tmp_dirty_reg[31]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  global_cnt_reg[0]/CK (DFFSX1)            0.00       0.00 r
+  global_cnt_reg[0]/Q (DFFSX1)             0.43       0.43 r
+  U2979/Y (NAND2XL)                        0.13       0.56 f
+  U3008/Y (NOR2XL)                         0.36       0.92 r
+  U2751/Y (INVX1)                          0.33       1.26 f
+  U4064/Y (CLKBUFX3)                       0.77       2.03 f
+  U4701/Y (OAI22XL)                        0.41       2.44 r
+  U2867/Y (NOR4XL)                         0.14       2.58 f
+  U4704/Y (OAI22XL)                        0.24       2.82 r
+  U3149/Y (OAI31XL)                        0.20       3.02 f
+  U2912/Y (OAI211XL)                       0.24       3.26 r
+  U2911/Y (OAI31XL)                        0.14       3.40 f
+  U3407/Y (INVXL)                          0.12       3.52 r
+  U3140/Y (NOR2XL)                         0.06       3.59 f
+  U3416/Y (AOI31XL)                        0.17       3.76 r
+  U4777/CO (ADDFXL)                        0.72       4.47 r
+  U2766/CO (ADDFX1)                        0.29       4.76 r
+  U3405/Y (NOR2XL)                         0.09       4.85 f
+  U4791/Y (AOI2BB2X1)                      0.24       5.09 f
+  U2956/CO (ADDFXL)                        0.56       5.65 f
+  U4795/CO (ADDFX1)                        0.28       5.94 f
+  U3209/S (ADDFXL)                         0.35       6.29 r
+  U3007/Y (NOR3XL)                         0.09       6.38 f
+  U3005/Y (AOI31X1)                        0.51       6.89 r
+  U5001/Y (OAI222X1)                       0.28       7.17 f
+  U2992/Y (AOI21XL)                        0.26       7.43 r
+  U5038/Y (OAI21XL)                        0.10       7.53 f
+  U5039/Y (AOI2BB2X1)                      0.24       7.77 f
+  tmp_dirty_reg[31]/D (DFFRX1)             0.00       7.77 f
+  data arrival time                                   7.77
+
+  clock CLK (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.00       8.00
+  tmp_dirty_reg[31]/CK (DFFRX1)            0.00       8.00 r
+  library setup time                      -0.22       7.78
+  data required time                                  7.78
+  -----------------------------------------------------------
+  data required time                                  7.78
+  data arrival time                                  -7.77
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+1
