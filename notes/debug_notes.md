@@ -34,16 +34,17 @@
 5. Is the delay correct? Should you add more delays?
 6. Draw the interface out, ONLY draw the datapath components out.
 
+
 ## Drawing Blocks
-0. From ASMD chart draw out the following.
-1. Combining CNTs and PTRs with the Main control blocks.
-2. Simply seperate the datapath components away from the controller.
-3. Uses only Blocks, draw it on a large paper using pencil.
-4. Specify the I/O signal boundary, draw the name of your signals.
-5. Seperate Combinational block and Sequential block.
-6. Draw out the Muxes and Demuxes.
-7. Draw out the control signals controlling the blocks and the muxes.
-8. Connect signal using rulers. The signal must be straight and perpendicular to each other.
+1. From ASMD chart draw out the following.
+2. Combining CNTs and PTRs with the Main control blocks.
+3. Simply seperate the datapath components away from the controller.
+4. Uses only Blocks, draw it on a large paper using pencil.
+5. Specify the I/O signal boundary, draw the name of your signals.
+6. Seperate Combinational block and Sequential block.
+7. Draw out the Muxes and Demuxes.
+8. Draw out the control signals controlling the blocks and the muxes.
+9. Connect signal using rulers. The signal must be straight and perpendicular to each other.
 
 ## Post-implementation debugging.
 0. Check for FSM, is your FSM behaving correctly?
@@ -73,6 +74,10 @@
 2. Pipelining the circuit if the calculation is done in an ordered manner.
 3. Parrallel processing if there is a lot of if~else conditions. Generate HWs for each if else condition. Select the result using a MUX
 
+# Creation of Combinational block
+1. We can simply use logic argument to create a combinational block, which happens within a signle clock cycle.
+2. Just consider it as a nature programming language the synthesis tool can help you create the circuit.
+
 # MAC Tree
 - This is actually valid and usable which generates an adder tree.
 ```verilog
@@ -93,7 +98,27 @@
         product = mult[3] * K3 + product;
         product = mult[4] * K4 + product;
     end
+
+    // This kind of coding style can prevent latch. Also prevents you from forgetting to assign the value.
+    always@(*)
+    begin
+        x1 = 0;
+        x2 = 0;
+        case(here)
+        'd0:x1 = 1 ;
+        'd1:x2 = 2 ;
+        default:
+        begin
+            x1 = 0;
+            x2 = 0;
+        end
+
+        endcase
+    end
 ```
+
+# Signed and unsigned
+1. Remember, if within signed operation, there is 1 unsigned value, the whole operation turns into an unsigned operation.
 
 # Memory technique
 - To increase the size of memory or increase the BW of memory, since memory are usually given as block of fixed size.
@@ -135,9 +160,7 @@
 1. First Address handshaking then next perform write data handshaking to complete one data transcation.
 
 ## Handshaking
-1. valid, ready and response
-
-
+2. All AXI channel has valid, ready and response
 
 ## Master & Slave
 1. Two types of ports exist, master port and slave port.
@@ -165,4 +188,61 @@
 
 ## Concept of MMIO
 1. In AXI, all devices are just address space.
-2.
+
+# Pipelining and Load balance
+## Problem
+- Load balance
+- Variable Load
+- Long latency
+
+## Prevent stall
+0. First do the analysis of your HW.
+1. Use parrallel processing on the slowest stage, add a distributer and a joiner.
+2. Cut the slowest stage into multiple stage.
+3. Parrallel copies of the slowest stage.
+
+## Parrallel processing
+1. It has the advantage of low power.
+
+
+
+## Double buffering & FIFO
+1. This is usually used in a hierarchical level.
+2. Putting FIFO to prevent the load balancing problem
+3. The length of the FIFO is something that must be considered.
+4. Double buffer, keep taking data from 2 different registers. Double buffering is a commonly used technique in more advanced design.
+
+
+## Double buferring
+1. This can be used to change global stalling into local stalling, ways is to add registers to the feedback ready signal.
+2. When stalling, the old data is first latched, the new data is still computing, later the new data get stored into the double buffers first stage.
+3. When the stage is unlocked, switch the register back to the first register of the double buffer.
+4. Note that the feedback ready signal must also get latched. To prevent the Critical path created by the long and gate chains.
+
+
+# Metastable
+1. 2 DFF for normal cross clock domain design.
+2. 3 DFFs for high-speed clock domain design.
+3. To completly prevent it from happen, do a feedback DFF design, telling the previous clock domain that the value is clearly latched.
+4. When passing through the value of a counter.
+> Passing Binary Codeded and one-hot signals through a brute force synchronizer can be hazardous to your circuits. Gray Code is a better option.
+
+## When DFF dies?
+1. Within the DFF, it is a latch built in with inverter feedback pair.
+2. Metastable is a condition where the signal is actually ocsilating within the inverter pairs.
+3. DFF with setup time and hold time violation leads to this hold time violation.
+4. Setup time and hold time violation usually occurs in CDC.
+5. There are more than 100 clock domains within your phone. www So this actually occurs very often.
+6. The occurence probability of metastable can be calculated through MTBF formula.
+7. Normal brute force synchrnoizer uses 2 DFFs. If high-f uses 3 DFFs.
+
+## Register all output and how to ensure Rx gets the correct data
+1. We need the data length of the A clock domain to be long enough.
+2. This is under the condition A clock is in high-f B clk is in low-f.
+3. We usually hope that the signal should be 1.5 times long w.r.t B clk
+4. The most rigorous approach sends back the signal to tell the clk domain B actually receives the signal.
+
+## Multi-bit case
+1. Syncrhonizing multi-bits is hard. Skew leads to multi-bit transmission error in different clk domains.
+2. The control signal only uses 1 bit when crossing the clk-domain.
+3. Uses 1 single control bits when crossing the clk-domain, where we just throw the data across the clk domain, latch the data in another clk domain.
