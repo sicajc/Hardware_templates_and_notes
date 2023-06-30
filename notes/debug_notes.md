@@ -47,23 +47,23 @@
 9. Connect signal using rulers. The signal must be straight and perpendicular to each other.
 
 ## Post-implementation debugging.
-0. Check for FSM, is your FSM behaving correctly?
-1. Check for control flags, are they in the condition you hope to terminate?
-2. Check for sub-controls and cnts, are they counting as you expected?
-3. Check for the transition edges of the state, is the value preserved correctly? Does the value reseted correctly?
-4. Check for the transition of state, does the value come late or not?
-5. Check for sequential assignments and combinational assignments?
-6. Check for your wrong signal, have you assigned the wrong signal value?
-7. Check for the array index, is the array index you specified correct?
-8. Check for bit Width declration, is your bit width enough?
-9. Check for possibility when Overflowing, this happens a lot when doing arithmetic operations, signed value also has possibility of overFlowing.
-10. For the problem of convergence, check for boundary conditions.
-11. Check for the consistency of data types, is the signal you assigned to of the same data type? Sign and unsigned.
-12. Check for concatenation and sign-extension error, did you align the value in a right way?
-13. Check for data placement problem, when sharing registers, did you place the value in the right position of the register?
-14. Check for the value sent in, did you sample the correct data?
-15. Check for Vivado Erros and Warnings, clear them all.
-16. Check for vivado synthesis error and warnings.
+1. Check for FSM, is your FSM behaving correctly?
+2. Check for control flags, are they in the condition you hope to terminate?
+3. Check for sub-controls and cnts, are they counting as you expected?
+4. Check for the transition edges of the state, is the value preserved correctly? Does the value reseted correctly?
+5. Check for the transition of state, does the value come late or not?
+6. Check for sequential assignments and combinational assignments?
+7. Check for your wrong signal, have you assigned the wrong signal value?
+8. Check for the array index, is the array index you specified correct?
+9. Check for bit Width declration, is your bit width enough?
+10. Check for possibility when Overflowing, this happens a lot when doing arithmetic operations, signed value also has possibility of overFlowing.
+11. For the problem of convergence, check for boundary conditions.
+12. Check for the consistency of data types, is the signal you assigned to of the same data type? Sign and unsigned.
+13. Check for concatenation and sign-extension error, did you align the value in a right way?
+14. Check for data placement problem, when sharing registers, did you place the value in the right position of the register?
+15. Check for the value sent in, did you sample the correct data?
+16. Check for Vivado Erros and Warnings, clear them all.
+17. Check for vivado synthesis error and warnings.
 
 # Testbench
 1. Uses Random pattern for common functional case.
@@ -75,8 +75,8 @@
 3. Parrallel processing if there is a lot of if~else conditions. Generate HWs for each if else condition. Select the result using a MUX
 
 # Creation of Combinational block
-1. We can simply use logic argument to create a combinational block, which happens within a signle clock cycle.
-2. Just consider it as a nature programming language the synthesis tool can help you create the circuit.
+1. We can simply use logic argument to create a combinational block in always@* block, which happens within a signle clock cycle.
+2. Just consider it as a nature programming language ,the synthesis tool can help you create the circuit.
 
 # MAC Tree
 - This is actually valid and usable which generates an adder tree.
@@ -202,15 +202,15 @@
 3. Parrallel copies of the slowest stage.
 
 ## Parrallel processing
-1. It has the advantage of low power.
-
-
+1. It has the advantage when doing low power by decreasing the peak frequency.
 
 ## Double buffering & FIFO
 1. This is usually used in a hierarchical level.
 2. Putting FIFO to prevent the load balancing problem
 3. The length of the FIFO is something that must be considered.
 4. Double buffer, keep taking data from 2 different registers. Double buffering is a commonly used technique in more advanced design.
+5. Before stalling, buffer 1 is used. When we stall, store the current result into buffer 2, then store the next result into buffer 1. Stalled. During stalled, take the result out from buffer 2. Once stall is lifted, restore to use the result from buffer 1.
+6. Note the global stall signal must also be latched.
 
 
 ## Double buferring
@@ -237,10 +237,10 @@
 7. Normal brute force synchrnoizer uses 2 DFFs. If high-f uses 3 DFFs.
 
 ## Register all output and how to ensure Rx gets the correct data
-1. We need the data length of the A clock domain to be long enough.
+1. We need the data length of the A clock domain to be long enough for the B clock domain to correctly receive the data.
 2. This is under the condition A clock is in high-f B clk is in low-f.
 3. We usually hope that the signal should be 1.5 times long w.r.t B clk
-4. The most rigorous approach sends back the signal to tell the clk domain B actually receives the signal.
+4. The most rigorous approach sends back the signal to tell the clk domain B actually receives the signal. The receive and confirm way.
 
 ## Multi-bit case
 1. Syncrhonizing multi-bits is hard. Skew leads to multi-bit transmission error in different clk domains.
